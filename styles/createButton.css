@@ -1,0 +1,74 @@
+.btn, .btn-dark, .btn-light, .btn-new {
+    height: 100px;
+    width: 250px;
+    border-radius: 30px!important;
+    border: none;
+    background-color: #007bff!important;
+}
+
+.btn {
+    padding: 1px 6px!important;
+}
+
+.btn a, .btn-dark a, .btn-light a, .btn-new a {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.container-default, .container-light, .container-new, .container-dark {
+    text-align: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+.container-default {
+    top: 40%;
+    left: 41%;
+}
+
+.container-dark {
+    top: 40%;
+    left: 58.5%;
+}
+
+.container-light {
+    top: 57%;
+    left: 41%;
+}
+
+.container-new {
+    top: 57%;
+    left: 58.5%;
+}
+
+.container-fluid {
+    height: calc(100% - 166px)!important;
+}
+
+.btn-text {
+    position: relative;
+}
+
+.btn-text:hover {
+    color: whitesmoke;
+    text-decoration: none!important;
+}
+
+.btn-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-text:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}

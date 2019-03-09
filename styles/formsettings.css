@@ -1,0 +1,72 @@
+.registration-form {
+    padding: 10px;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    z-index: 0;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.btn-primary {
+    display: block;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin: auto auto 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: whitesmoke;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 32px;
+    line-height: 55px;
+}
+
+.center-content {
+    top: 10%;
+}
+
+.middle-content {
+    top: 40%;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 7px;
+    width: 125px;
+    text-align: center;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.large-title {
+    font-size: 20px;
+}

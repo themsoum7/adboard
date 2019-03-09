@@ -1,0 +1,31 @@
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
+    display: flex !important;
+    justify-content: space-between !important;
+    z-index: 1!important;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: whitesmoke !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 20px !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: dodgerblue !important;
+}
+
+.navbar-fixed-top {
+    position: fixed !important;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.my-bg {
+    background-color: #007bff;
+}

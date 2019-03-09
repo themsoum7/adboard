@@ -1,0 +1,41 @@
+create database adboard;
+use adboard;
+
+create table `user` (
+    userID int AUTO_INCREMENT,
+    name varchar(20) not null,
+    avatarUrl varchar(50) not null,
+    phone varchar(20) not null,
+    email varchar(320) not null,
+    PRIMARY KEY (userID)
+);
+
+create table ad (
+    adID int AUTO_INCREMENT,
+    name varchar(20) not null,
+    imageUrl varchar(50),
+    `desc` text not null,
+    PRIMARY KEY (adID)
+);
+
+alter table `user` drop name;
+alter table `user` add firstname varchar(30) not null;
+alter table `user` add lastname varchar(30) not null;
+alter table `user` add `password` varchar(30) not null;
+
+alter table ad add postdate datetime not null;
+alter table ad add userID int not null;
+alter table ad add constraint user_ibfk_1 foreign key (userID) references `user`(userID);
+alter table ad modify name varchar(100) not null;
+
+alter table `user` add isAdmin boolean;
+
+alter table `user` add country varchar(50) not null;
+alter table `user` add city varchar(50) not null;
+alter table `user` add bday date not null;
+alter table `user` add sex boolean not null;
+
+alter table `user` modify sex varchar(10) not null;
+alter table `ad` add status varchar(20);
+
+alter table `user` modify isAdmin boolean;

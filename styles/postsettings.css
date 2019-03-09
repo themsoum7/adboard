@@ -1,0 +1,35 @@
+.post-content {
+    width: 524px;
+    margin: 65px auto;
+    border: 2px solid #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post-image {
+    width: 500px;
+    border: 2px solid #007bff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.post-edit-button, .post-delete-button {
+    background-color: #007bff;
+    width: 50px;
+    color: whitesmoke!important;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none!important;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.long-btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}

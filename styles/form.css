@@ -1,0 +1,50 @@
+.new-notice {
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border: 2px solid #212529;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #555555;
+    color: whitesmoke;
+}
+
+.notice-title, .notice-body, .comment-body, .user-name {
+    border: 1px solid darkslateblue;
+    width: 100%;
+    background-color: #212529;
+    color: #88aaff;
+    margin-bottom: -10px;
+}
+
+.user-name, .avatar-img {
+    margin-bottom: 5px;
+}
+
+.notice-title {
+    margin-bottom: 5px;
+}
+
+.submit-button {
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.sex-form {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-height {
+    height: 70px;
+}
